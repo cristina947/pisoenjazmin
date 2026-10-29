@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de Venta Exclusiva | Jose</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            fuchsia: '#dd116f',
+                            fuchsiaHover: '#b80c5a',
+                            cream: '#FAF7F2',
+                            creamDark: '#F3EDE2',
+                            charcoal: '#1A1A1A',
+                            softGray: '#F8F9FA'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-fuchsia {
+            background: linear-gradient(135deg, #dd116f 0%, #9e0b4e 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #dd116f 0%, #80073e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .custom-shadow {
+            box-shadow: 0 20px 40px -15px rgba(221, 17, 111, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-brand-cream text-brand-charcoal font-sans antialiased selection:bg-brand-fuchsia selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200/60 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <!-- Logotipo Barrio Inmobiliaria -->
+                <img src="LOGO_2.png" alt="Barrio Inmobiliaria" class="h-12 w-auto object-contain">
+            </div>
+            <a href="tel:659655159" class="hidden sm:inline-flex items-center gap-2 bg-brand-fuchsia text-white px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-brand-fuchsiaHover transition-colors duration-300 shadow-md">
+                <i class="fa-solid fa-phone text-xs"></i>
+                <span>659 65 51 59</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Hero Text -->
+                    <div class="lg:col-span-7 text-left space-y-6">
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-fuchsia/10 text-brand-fuchsia font-semibold text-xs tracking-wider uppercase">
+                            <i class="fa-solid fa-star text-xs"></i> Estrategia Inmobiliaria Personalizada
+                        </div>
+                        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-stone-900 leading-tight">
+                            Jose, así vamos a vender tu casa por un <span class="text-gradient underline decoration-brand-fuchsia/30">precio óptimo de mercado</span>.
+                        </h1>
+                        <p class="text-lg text-stone-600 font-normal leading-relaxed max-w-2xl">
+                            Un plan estratégico diseñado en exclusiva para tu propiedad en Santander. Combinamos valoración objetiva de mercado, difusión premium y máxima seguridad compradora.
+                        </p>
+                        
+                        <!-- Property Highlights Pill Badges -->
+                        <div class="pt-4 border-t border-stone-200 grid grid-cols-2 sm:grid-cols-3 gap-4">
+                            <div class="bg-white p-3.5 rounded-xl border border-stone-100 shadow-sm">
+                                <span class="text-xs text-stone-400 block font-medium uppercase">Ubicación</span>
+                                <span class="font-bold text-stone-800 text-sm flex items-center gap-1.5 mt-1">
+                                    <i class="fa-solid fa-location-dot text-brand-fuchsia"></i> C/ Jazmín 10, Bajo 2
+                                </span>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-xl border border-stone-100 shadow-sm">
+                                <span class="text-xs text-stone-400 block font-medium uppercase">Distribución</span>
+                                <span class="font-bold text-stone-800 text-sm flex items-center gap-1.5 mt-1">
+                                    <i class="fa-solid fa-door-open text-brand-fuchsia"></i> 1 Hab | 1 Baño | 1 Aseo
+                                </span>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-xl border border-stone-100 shadow-sm col-span-2 sm:col-span-1">
+                                <span class="text-xs text-stone-400 block font-medium uppercase">Extras Exclusivos</span>
+                                <span class="font-bold text-stone-800 text-sm flex items-center gap-1.5 mt-1">
+                                    <i class="fa-solid fa-box text-brand-fuchsia"></i> Trastero y Bodega
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                            <a href="#valoracion" class="inline-flex justify-center items-center gap-2 bg-brand-fuchsia text-white px-8 py-4 rounded-xl font-bold text-base hover:bg-brand-fuchsiaHover transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                                Ver Estudio de Valoración <i class="fa-solid fa-arrow-down text-sm"></i>
+                            </a>
+                            <a href="#contacto" class="inline-flex justify-center items-center gap-2 bg-white text-stone-800 border border-stone-300 px-8 py-4 rounded-xl font-semibold text-base hover:bg-stone-50 transition-colors shadow-sm">
+                                Contactar con Cristina
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Hero Visual Card -->
+                    <div class="lg:col-span-5">
+                        <div class="relative mx-auto max-w-md lg:max-w-none">
+                            <div class="absolute -inset-2 rounded-3xl gradient-fuchsia opacity-20 blur-xl"></div>
+                            <div class="relative bg-white p-4 sm:p-6 rounded-2xl border border-stone-100 shadow-2xl">
+                                <div class="relative h-72 sm:h-80 rounded-xl overflow-hidden mb-5 group">
+                                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" alt="Interiorismo Moderno" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                                        <span class="bg-brand-fuchsia/90 text-white text-xs px-2.5 py-1 rounded-md font-semibold tracking-wide">ESTADO IMPECABLE</span>
+                                        <h3 class="font-serif text-lg font-bold mt-1">Salón y Cocina Concepto Abierto</h3>
+                                        <p class="text-xs text-stone-200">Segunda mano · Reformado con altas calidades</p>
+                                    </div>
+                                </div>
+                                <div class="bg-brand-cream/60 rounded-xl p-4 border border-stone-200/60">
+                                    <div class="flex items-center justify-between text-xs text-stone-600 mb-1">
+                                        <span>Estado Inmueble</span>
+                                        <span class="font-bold text-emerald-700 flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Listo para entrar</span>
+                                    </div>
+                                    <div class="w-full bg-stone-200 h-2 rounded-full overflow-hidden">
+                                        <div class="bg-emerald-500 h-full w-full"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Valuation Range (Horquilla de Valoración) -->
+        <section id="valoracion" class="py-16 bg-white border-y border-stone-200/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="text-brand-fuchsia font-bold text-xs uppercase tracking-widest">Análisis de Mercado</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 mt-2">Horquilla de Valoración Real</h2>
+                    <p class="text-stone-600 mt-3">Basado en testigos de venta recientes en Santander y las características específicas de tu inmueble (Planta baja reformada con concepto abierto, trastero y bodega).</p>
+                </div>
+
+                <!-- Valuation Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-center">
+                    
+                    <!-- Mínimo -->
+                    <div class="bg-brand-cream/40 p-6 rounded-2xl border border-stone-200 text-center relative hover:border-stone-300 transition-all">
+                        <span class="text-xs font-bold uppercase tracking-wider text-stone-500">Mínimo Sugerido</span>
+                        <div class="text-3xl font-extrabold text-stone-800 my-3">231.592 €</div>
+                        <p class="text-xs text-stone-500 leading-relaxed">Garantiza una venta ultra rápida, pero puede dejar margen sobre el valor real percibido.</p>
+                    </div>
+
+                    <!-- Óptimo (Destacado) -->
+                    <div class="bg-white p-8 rounded-2xl border-2 border-brand-fuchsia shadow-xl text-center relative transform md:-translate-y-2">
+                        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-fuchsia text-white font-bold text-xs px-4 py-1 rounded-full uppercase tracking-wider">
+                            Recomendación Estratégica
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-fuchsia">Precio Óptimo de Mercado</span>
+                        <div class="text-4xl font-black text-brand-fuchsia my-3">243.780,81 €</div>
+                        <p class="text-sm text-stone-600 leading-relaxed font-medium">Equilibrio perfecto entre maximizar la rentabilidad y mantener un tiempo de captación óptimo.</p>
+                    </div>
+
+                    <!-- Máximo -->
+                    <div class="bg-brand-cream/40 p-6 rounded-2xl border border-stone-200 text-center relative hover:border-stone-300 transition-all">
+                        <span class="text-xs font-bold uppercase tracking-wider text-stone-500">Máximo Testeo</span>
+                        <div class="text-3xl font-extrabold text-stone-800 my-3">255.970 €</div>
+                        <p class="text-xs text-stone-500 leading-relaxed">Toque superior de mercado. Ideal si no existe prisa por cerrar la operación en el corto plazo.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Mapa Competitivo -->
+        <section class="py-20 bg-brand-cream/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="text-brand-fuchsia font-bold text-xs uppercase tracking-widest">Estudio Comparativo</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 mt-2">Mapa Competitivo de la Zona</h2>
+                    <p class="text-stone-600 mt-3">Comparativa directa de la propiedad de Jose frente a inmuebles similares actualmente disponibles en la zona.</p>
+                </div>
+
+                <!-- Responsive Table Wrapper -->
+                <div class="bg-white rounded-2xl border border-stone-200/80 shadow-md overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse min-w-[640px]">
+                            <thead>
+                                <tr class="bg-stone-900 text-white text-xs uppercase tracking-wider">
+                                    <th class="p-4 sm:p-5 font-semibold">Criterio / Inmueble</th>
+                                    <th class="p-4 sm:p-5 font-semibold bg-brand-fuchsia text-white">Tu Casa (Calle Jazmín 10)</th>
+                                    <th class="p-4 sm:p-5 font-semibold text-stone-300">Competidor 1 (Zona Centro)</th>
+                                    <th class="p-4 sm:p-5 font-semibold text-stone-300">Competidor 2 (Próximo)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-stone-100 text-sm">
+                                <tr class="hover:bg-stone-50/50 transition-colors">
+                                    <td class="p-4 sm:p-5 font-bold text-stone-800">Estado / Reforma</td>
+                                    <td class="p-4 sm:p-5 font-semibold text-brand-fuchsia bg-brand-fuchsia/5">Reformado Total (Concepto Abierto)</td>
+                                    <td class="p-4 sm:p-5 text-stone-600">Origen / A reformar parcial</td>
+                                    <td class="p-4 sm:p-5 text-stone-600">Reforma Antigua (>10 años)</td>
+                                </tr>
+                                <tr class="hover:bg-stone-50/50 transition-colors">
+                                    <td class="p-4 sm:p-5 font-bold text-stone-800">Distribución</td>
+                                    <td class="p-4 sm:p-5 font-semibold text-brand-fuchsia bg-brand-fuchsia/5">1 Hab + 1 Baño + 1 Aseo</td>
+                                    <td class="p-4 sm:p-5 text-stone-600">2 Hab + 1 Baño</td>
+                                    <td class="p-4 sm:p-5 text-stone-600">1 Hab + 1 Baño</td>
+                                </tr>
+                                <tr class="hover:bg-stone-50/50 transition-colors">
+                                    <td class="p-4 sm:p-5 font-bold text-stone-800">Anexos (Trastero/Bodega)</td>
+                                    <td class="p-4 sm:p-5 font-semibold text-brand-fuchsia bg-brand-fuchsia/5">Incluye Trastero y Bodega</td>
+                                    <td class="p-4 sm:p-5 text-stone-600">Sin anexos</td>
+                                    <td class="p-4 sm:p-5 text-stone-600">Solo trastero pequeño</td>
+                                </tr>
+                                <tr class="hover:bg-stone-50/50 transition-colors">
+                                    <td class="p-4 sm:p-5 font-bold text-stone-800">Precio de Salida</td>
+                                    <td class="p-4 sm:p-5 font-bold text-brand-fuchsia bg-brand-fuchsia/5">243.780 € (Óptimo)</td>
+                                    <td class="p-4 sm:p-5 text-stone-600">238.000 €</td>
+                                    <td class="p-4 sm:p-5 text-stone-600">250.000 €</td>
+                                </tr>
+                                <tr class="hover:bg-stone-50/50 transition-colors">
+                                    <td class="p-4 sm:p-5 font-bold text-stone-800">Atractivo Inversor/Final</td>
+                                    <td class="p-4 sm:p-5 font-bold text-emerald-600 bg-brand-fuchsia/5">Muy Alto (Listo para vivir)</td>
+                                    <td class="p-4 sm:p-5 text-stone-500">Medio (Requiere obra)</td>
+                                    <td class="p-4 sm:p-5 text-stone-500">Medio-Alto</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap de Venta (5 Pasos) -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-fuchsia font-bold text-xs uppercase tracking-widest">Metodología Comprobada</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 mt-2">Roadmap de Venta en 5 Pasos</h2>
+                    <p class="text-stone-600 mt-3">Un itinerario claro y organizado para acompañar a Jose en cada etapa del proceso con total transparencia.</p>
+                </div>
+
+                <!-- Timeline Horizontal/Vertical Dynamic -->
+                <div class="relative">
+                    <!-- Line connecting steps (Desktop) -->
+                    <div class="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-stone-200 -translate-y-1/2 z-0"></div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 relative z-10">
+                        
+                        <!-- Paso 1 -->
+                        <div class="bg-brand-cream/50 p-6 rounded-2xl border border-stone-200 hover:border-brand-fuchsia/50 transition-all group">
+                            <div class="w-12 h-12 rounded-xl bg-brand-fuchsia text-white font-bold flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform shadow-md">
+                                01
+                            </div>
+                            <h3 class="font-bold text-stone-900 text-lg mb-2">Valoración</h3>
+                            <p class="text-xs text-stone-600 leading-relaxed">Análisis de datos reales, testigos de venta y fijación del precio óptimo estratégico.</p>
+                        </div>
+
+                        <!-- Paso 2 -->
+                        <div class="bg-brand-cream/50 p-6 rounded-2xl border border-stone-200 hover:border-brand-fuchsia/50 transition-all group">
+                            <div class="w-12 h-12 rounded-xl bg-brand-fuchsia text-white font-bold flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform shadow-md">
+                                02
+                            </div>
+                            <h3 class="font-bold text-stone-900 text-lg mb-2">Papeleo</h3>
+                            <p class="text-xs text-stone-600 leading-relaxed">Gestión completa de Nota Simple, Certificado Energético y verificación registral previa.</p>
+                        </div>
+
+                        <!-- Paso 3 -->
+                        <div class="bg-brand-cream/50 p-6 rounded-2xl border border-stone-200 hover:border-brand-fuchsia/50 transition-all group">
+                            <div class="w-12 h-12 rounded-xl bg-brand-fuchsia text-white font-bold flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform shadow-md">
+                                03
+                            </div>
+                            <h3 class="font-bold text-stone-900 text-lg mb-2">Marketing Premium</h3>
+                            <p class="text-xs text-stone-600 leading-relaxed">Reportaje fotográfico profesional, Home Staging virtual y posicionamiento destacado.</p>
+                        </div>
+
+                        <!-- Paso 4 -->
+                        <div class="bg-brand-cream/50 p-6 rounded-2xl border border-stone-200 hover:border-brand-fuchsia/50 transition-all group">
+                            <div class="w-12 h-12 rounded-xl bg-brand-fuchsia text-white font-bold flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform shadow-md">
+                                04
+                            </div>
+                            <h3 class="font-bold text-stone-900 text-lg mb-2">Lanzamiento</h3>
+                            <p class="text-xs text-stone-600 leading-relaxed">Campaña simultánea en portales y activación prioritaria en la Red Afilia inmobiliaria.</p>
+                        </div>
+
+                        <!-- Paso 5 -->
+                        <div class="bg-brand-cream/50 p-6 rounded-2xl border border-stone-200 hover:border-brand-fuchsia/50 transition-all group">
+                            <div class="w-12 h-12 rounded-xl bg-brand-fuchsia text-white font-bold flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform shadow-md">
+                                05
+                            </div>
+                            <h3 class="font-bold text-stone-900 text-lg mb-2">Cierre</h3>
+                            <p class="text-xs text-stone-600 leading-relaxed">Negociación de ofertas, gestión de contrato de arras y acompañamiento en Notaría.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marketing Invisible (Red Afilia & Filtro Solvencia) -->
+        <section class="py-20 bg-stone-900 text-white relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-5 space-y-6">
+                        <span class="text-brand-fuchsia font-bold text-xs uppercase tracking-widest">Ventaja Competitiva</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold leading-tight">
+                            El Marketing Invisible que acelera la venta
+                        </h2>
+                        <p class="text-stone-300 text-sm leading-relaxed">
+                            No solo publicamos un anuncio; activamos una potente infraestructura de comercialización silenciosa que protege tu privacidad e incrementa exponencialmente el alcance comprador.
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        
+                        <!-- Card 1: Red Afilia -->
+                        <div class="bg-stone-800/80 p-6 rounded-2xl border border-stone-700/60 hover:border-brand-fuchsia transition-colors">
+                            <div class="w-12 h-12 rounded-xl bg-brand-fuchsia/20 text-brand-fuchsia flex items-center justify-center text-2xl mb-4">
+                                <i class="fa-solid fa-network-wired"></i>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">Ecosistema Red Afilia</h3>
+                            <p class="text-xs text-stone-400 leading-relaxed">
+                                Tu inmueble estará disponible simultáneamente para decenas de agencias asociadas en Cantabria. Múltiples agentes buscando comprador para tu casa, manteniendo a Barrio Inmobiliaria como tu único interlocutor.
+                            </p>
+                        </div>
+
+                        <!-- Card 2: Filtro de Solvencia -->
+                        <div class="bg-stone-800/80 p-6 rounded-2xl border border-stone-700/60 hover:border-brand-fuchsia transition-colors">
+                            <div class="w-12 h-12 rounded-xl bg-brand-fuchsia/20 text-brand-fuchsia flex items-center justify-center text-2xl mb-4">
+                                <i class="fa-solid fa-user-shield"></i>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">Filtro Riguroso de Solvencia</h3>
+                            <p class="text-xs text-stone-400 leading-relaxed">
+                                Evitamos visitas innecesarias y curiosos. Validamos previamente la Capacidad Financiera y el perfil comprador antes de agendar cualquier visita a Calle Jazmín 10.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="py-20 bg-brand-cream">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-stone-200/80 text-center relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-brand-fuchsia/10 rounded-bl-full pointer-events-none"></div>
+
+                    <!-- Avatar / Rep Photo -->
+                    <div class="w-24 h-24 mx-auto rounded-full gradient-fuchsia p-1 shadow-lg mb-6">
+                        <div class="w-full h-full rounded-full bg-stone-100 flex items-center justify-center overflow-hidden">
+                            <i class="fa-solid fa-user-tie text-4xl text-brand-fuchsia"></i>
+                        </div>
+                    </div>
+
+                    <span class="text-brand-fuchsia font-bold text-xs uppercase tracking-widest">Tu Asesora Inmobiliaria</span>
+                    <h2 class="font-serif text-3xl font-bold text-stone-900 mt-1">Cristina Ruitiña</h2>
+                    <p class="text-stone-500 text-sm mt-1 mb-8">Especialista en Mercado Residencial · Barrio Inmobiliaria</p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+                        <a href="tel:659655159" class="w-full sm:w-auto flex-1 inline-flex items-center justify-center gap-3 bg-brand-fuchsia text-white px-6 py-3.5 rounded-xl font-bold hover:bg-brand-fuchsiaHover transition-colors shadow-md">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>659 65 51 59</span>
+                        </a>
+                        <a href="https://wa.me/34659655159?text=Hola%20Cristina,%20he%20visto%20la%20propuesta%20de%20venta" target="_blank" class="w-full sm:w-auto flex-1 inline-flex items-center justify-center gap-3 bg-emerald-600 text-white px-6 py-3.5 rounded-xl font-bold hover:bg-emerald-700 transition-colors shadow-md">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Enviar WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-8 border-t border-stone-800 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="font-bold text-white">BARRIO INMOBILIARIA</span>
+                <span>© 2026 Santander, Cantabria</span>
+            </div>
+            <p class="text-stone-500">Documento preparado en exclusiva para Jose.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
